@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="D9f-ga-TXm">
+    <device id="retina6_72" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Animation Viev Controller-->
+        <scene sceneID="8I3-Wz-UtY">
+            <objects>
+                <viewController id="UCv-aP-ZFN" customClass="AnimationVievController" customModule="HW9" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3N0-o9-vAD">
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.59999999999999998" contentMode="scaleAspectFit" semanticContentAttribute="spatial" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Image 2" translatesAutoresizingMaskIntoConstraints="NO" id="Iqt-Km-cZl">
+                                <rect key="frame" x="-236" y="-374" width="934" height="1778"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="1" green="0.52444715330000002" blue="0.03318760053" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="17" scale="default" weight="black"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="1fI-uH-7Bd">
+                                <rect key="frame" x="143.33333333333331" y="762.33333333333337" width="143.33333333333331" height="59.666666666666629"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" lineBreakMode="middleTruncation" role="destructive" translatesAutoresizingMaskIntoConstraints="NO" id="kH0-Zr-c8x">
+                                        <rect key="frame" x="0.0" y="0.0" width="143.33333333333334" height="59.666666666666664"/>
+                                        <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Zoom">
+                                            <fontDescription key="titleFontDescription" name="Georgia-Bold" family="Georgia" pointSize="40"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="locateButtonePressed:" destination="UCv-aP-ZFN" eventType="touchUpInside" id="bY1-mB-fgr"/>
+                                        </connections>
+                                    </button>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" role="destructive" translatesAutoresizingMaskIntoConstraints="NO" id="Gai-YD-XvW">
+                                        <rect key="frame" x="0.0" y="0.0" width="143.33333333333334" height="0.0"/>
+                                        <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Clear">
+                                            <fontDescription key="titleFontDescription" name="Georgia-Bold" family="Georgia" pointSize="40"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="delocateBottonePressed:" destination="UCv-aP-ZFN" eventType="touchUpInside" id="60A-Ue-QhC"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <imageView hidden="YES" autoresizesSubviews="NO" opaque="NO" clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="pma-s0-yu5">
+                                <rect key="frame" x="115" y="364" width="200" height="204.33333333333337"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="P1u-bc-D4l"/>
+                                    <constraint firstAttribute="width" constant="200" id="ZbE-am-a34"/>
+                                </constraints>
+                                <imageReference key="image" image="circle.dotted" catalog="system" symbolScale="large" renderingMode="original" variableValue="1"/>
+                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large" weight="ultraLight"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="zYt-tI-LJD"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="pma-s0-yu5" firstAttribute="centerX" secondItem="3N0-o9-vAD" secondAttribute="centerX" id="6b2-sY-OzI"/>
+                            <constraint firstItem="1fI-uH-7Bd" firstAttribute="centerY" secondItem="3N0-o9-vAD" secondAttribute="centerY" multiplier="1.7" id="o8C-YM-w2N"/>
+                            <constraint firstItem="1fI-uH-7Bd" firstAttribute="centerX" secondItem="3N0-o9-vAD" secondAttribute="centerX" id="opd-xh-3vq"/>
+                            <constraint firstItem="pma-s0-yu5" firstAttribute="centerY" secondItem="3N0-o9-vAD" secondAttribute="centerY" id="qDP-S7-ggi"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="P15-Y7-VBZ"/>
+                    <connections>
+                        <outlet property="clearButtone" destination="Gai-YD-XvW" id="jYc-VQ-QcR"/>
+                        <outlet property="planetView" destination="Iqt-Km-cZl" id="uEa-Ty-ttU"/>
+                        <outlet property="zoomButtone" destination="kH0-Zr-c8x" id="3PW-67-fAl"/>
+                        <outlet property="zoomViewWindow" destination="pma-s0-yu5" id="Ont-3N-iyf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qsr-hI-hkg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2691.6279069767443" y="153.86266094420603"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="WOP-QI-vDd">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="D9f-ga-TXm" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" id="OOM-3H-6Cm">
+                        <imageReference key="image" image="textformat.subscript.th" catalog="system" symbolScale="large" renderingMode="original"/>
+                        <color key="badgeColor" systemColor="systemRedColor"/>
+                    </tabBarItem>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="kSj-W2-YxX">
+                        <rect key="frame" x="0.0" y="59" width="430" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="UCv-aP-ZFN" kind="relationship" relationship="rootViewController" id="xYk-2V-5Ne"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gbj-I8-yw1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1768.7022900763359" y="154.92957746478874"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Image 2" width="1700" height="1707"/>
+        <image name="circle.dotted" catalog="system" width="128" height="123"/>
+        <image name="textformat.subscript.th" catalog="system" width="128" height="110"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
